@@ -91,6 +91,40 @@ To add a code snippet with syntax highlighting, please add the programming langu
     ```
 ```
 
+## Callouts
+
+Callouts can be used to highlight important information. This theme supports various type of callouts including note, warning, tip, and important.
+
+Untitled callout:
+```markdown
+{: .highlight }
+A paragraph
+```
+
+Note callout:
+```markdown
+{: .note }
+A note
+```
+
+Warning callout:
+```markdown
+{: .warning }
+A warning
+```
+
+Tip callout:
+```markdown
+{: .tip }
+A tip
+```
+
+Important callout:
+```markdown
+{: .important }
+Important information
+```
+
 ## Buttons:
 
 - To add a button to a markdown file, use the following syntax:
