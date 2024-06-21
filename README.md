@@ -1,174 +1,236 @@
-# just-the-docs-template
+# ISV Playbook on GitHub Pages
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+This repository contains the source code for the ISV Playbook on GitHub Pages. 
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+The ISV Playbook is designed to help the Microsoft ISV partners navigate the Microsoft Partner Network and leverage the resources available to build, go-to-market, and sell with Microsoft. The playbook provides guidance on the Microsoft Partner Network, programs, resources, and tools available to the ISV partners.
 
-More specifically, the created site:
+The repository is built using Just the Docs theme powered by [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+Following is the guidance to help you contribute to the ISV Playbook:
 
-To get started with creating a site, simply:
+## Page organization and navigation:
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+- The ISV Playbook is organized into sections and articles. Each section is a folder in the `_docs` directory and each article is a markdown file in the respective section folder.
+- The navigation is automatically generated based on the folder structure and the front matter of the markdown files.
+- To add a new section, create a new folder in the `_docs` directory and add a markdown file with the same name as the folder.
+- To add a new article, create a new markdown file in the respective section folder.
+- To change the order of sections or articles, update the `nav_order` in the front matter of the markdown file.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+## Front matter:
 
-After completing the creation of your new site on GitHub, update it as needed:
+- Each markdown file should have front matter at the beginning of the file. The front matter is used to define the layout, title, navigation order, parent, and permalink of the page.
+- The front matter should be enclosed in `---` at the beginning and end of the front matter.
+- The front matter should have the following fields:
+    - layout: default
+    - title: Title of the page
+    - nav_order: Order of the page in the navigation
+    - parent: Parent section of the page
+    - permalink: Permalink of the page
+- Example front matter:
+    ```
+    ---
+    layout: default
+    title: Article 1
+    nav_order: 1
+    has_children: true
+    parent: Section 1
+    permalink: /docs/section-1/article-1
+    ---
+    ```
+- The `permalink` field is optional. If not provided, the permalink is generated based on the folder structure and the file name.
+- The `has_children` field is used to indicate if the page has child pages. If set to true, the page will be displayed as a section in the navigation with a dropdown menu of child pages.
+- The `parent` and `has_children` field are mutually exclusive. If `parent` is provided, `has_children` should not be provided.
 
-## Replace the content of the template pages
+Example for a section with child pages:
+```markdown
+---
+layout: default
+title: Partner Programs
+nav_order: 3
+has_children: true
+permalink: /docs/partner-programs
+---
+```
 
-Update the following files to your own content:
+Example for an article with a parent section:
+```markdown
+---
+layout: default
+title: Article 1
+nav_order: 1
+parent: Partner Programs
+permalink: /docs/partner-program/article-1
+---
+```
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+The combination of above front matter will result in the following navigation structure:
+- Partner Programs
+    - Article 1
 
-## Changing the version of the theme and/or Jekyll
+Note: Absence of front matter will result in the HTML page not being generated during the build.
 
-Simply edit the relevant line(s) in the `Gemfile`.
+## Code snippets:
 
-## Adding a plugin
+- To add a code snippet to a markdown file, enclose the code in triple backticks.
+- To add a code snippet with syntax highlighting, add the language identifier after the first set of triple backticks.
+- Example code snippet:
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+```
+    ```
+    your code here
+    ```
+```
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+To add a code snippet with syntax highlighting, please add the programming language identifier after the first set of triple backticks. For example, to add a code snippet in Python, use the following syntax:
+```markdown
+```python
+```
+```python
+    ```
+    print("Hello, World!")
+    ```
+```
 
-- Add the following to your site's `Gemfile`:
+## Buttons:
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
+- To add a button to a markdown file, use the following syntax:
+    ```
+    [Link button](https://just-the-docs.com){: .btn }
     ```
 
-2.  Push your updated `_config.yml` to your site on GitHub.
+## Headings
 
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
+Headings can be added using the following syntax:
 
-## Building and previewing your site locally
+```
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+```
 
-Assuming [Jekyll] and [Bundler] are installed on your computer:
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
 
-1.  Change your working directory to the root directory of your site.
+## Inline elements
 
-2.  Run `bundle install`.
 
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
+```
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-    The built site is stored in the directory `_site`.
+[Link to another page](https://isvplaybook.github.io/isvplaybook/).
 
-## Publishing your built site on a different platform
+```
 
-Just upload all the files in the directory `_site`.
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-## Customization
+[Link to another page](https://isvplaybook.github.io/isvplaybook/).
 
-You're free to customize sites that you create with this template, however you like!
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Lists
 
-## Hosting your docs from an existing project repo
+Add unordered list by adding line with a * or - at the start of the line.
 
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
+```
+- Item 1
+- Item 2
+- Item 3
+```
 
-### Copy the template files
+- Item 1
+- Item 2
+- Item 3
 
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
+To add ordered list, add line with a number at the start of the line.
 
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
+```
+1. Item 1
+2. Item 2
+3. Item 3
+```
 
-### Modify the GitHub Actions workflow
+1. Item 1
+2. Item 2
+3. Item 3
 
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
+Please note that the numbers in your markdown file do not need to be in order. The list will be automatically numbered in the rendered page.
 
-1.  Set the default `working-directory` param for the build job.
+To add a task list in a tutorial, use the following syntax:
 
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
+```markdown
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
+```
 
-2.  Set the `working-directory` param for the Setup Ruby step.
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
 
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
+## Blockquotes
 
-3.  Set the path param for the Upload artifact step:
+To add a blockquote, use the following syntax:
 
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
-    ```
+```markdown
+> This is a blockquote.
+```
 
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
+> This is a blockquote.
 
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
+## Tables
 
-## Licensing and Attribution
+To add a table, use the following syntax:
 
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
+```markdown
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1, Col 1 | Row 1, Col 2 |
+| Row 2, Col 1 | Row 2, Col 2 |
+```
 
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1, Col 1 | Row 1, Col 2 |
+| Row 2, Col 1 | Row 2, Col 2 |
 
-----
+## Images
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+To add an image, use the following syntax:
 
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+```markdown
+![Image description](/path/to/image.jpg)
+```
+
+### Collapsed Section
+
+The following uses the [`<details>`](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections) tag to create a collapsed section.
+
+```
+<details markdown="block">
+<summary>Shopping list (click me!)</summary>
+
+This is content inside a `<details>` dropdown.
+
+- [ ] Apples
+- [ ] Oranges
+- [ ] Milk
+
+</details>
+```
+
+<details markdown="block">
+<summary>Shopping list (click me!)</summary>
+
+This is content inside a `<details>` dropdown.
+
+- [ ] Apples
+- [ ] Oranges
+- [ ] Milk
+
+</details>

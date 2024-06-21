@@ -1,8 +1,46 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: ISV Playbook
+description: The ISV Playbook is designed to help ISVs navigate the Microsoft Partner Network and leverage the resources available to build, go-to-market, and sell with Microsoft.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://isvplaybook.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+# aux_links:
+#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+nav_enabled: true
+heading_anchors: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+enable_copy_code_button: true
+
+permalink: pretty
+
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    docs:
+
