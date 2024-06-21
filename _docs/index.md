@@ -1,4 +1,5 @@
 ---
+layout: default
 title: ISV Playbook
 nav_order: 1
 ---
