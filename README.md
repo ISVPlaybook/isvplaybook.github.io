@@ -32,7 +32,6 @@ permalink: /docs/parentsection/short-page-name/
 ---
 
 # Article Title (this is the title of the page)
-```
 {: .no_toc } - This excludes the article title from the table of contents.
 
 Add a description of the article here in a few lines.
@@ -159,9 +158,9 @@ Important information
 
 ## Buttons:
 
-- To add a button to a markdown file, use the following syntax:
+To add a button to a page, use the following syntax:
     ```
-    [Link button](https://just-the-docs.com){: .btn }
+    [Link button](https://isvplaybook.github.io/){: .btn }
     ```
 
 ## Headings
