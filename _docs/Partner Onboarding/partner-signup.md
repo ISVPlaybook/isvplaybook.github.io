@@ -27,9 +27,9 @@ The Microsoft Partner Network (MPN) is now called the Microsoft AI Cloud Partner
 
 To sign up as a Microsoft Partner, you will need the follwing information at hand:
 
-- Name and company email address of the primary contact person - An email is sent to verify this email address. Once the email address has been verified, the review of the rest of the information is processed. This process can take 3-5 business days to complete.
-- Authority to sign legal agreements on behalf of your company - You must have the authority to sign legal agreements on behalf of your company to complete the sign-up process.
-- Legal business name and address for your company - You must provide the legal business name and address for your company.
+- **Name and company email address of the primary contact person** - An email is sent to verify this email address. Once the email address has been verified, the review of the rest of the information is processed. This process can take 3-5 business days to complete.
+- **Authority to sign legal agreements on behalf of your company** - You must have the authority to sign legal agreements on behalf of your company to complete the sign-up process.
+- **Legal business name and address for your company** - You must provide the legal business name and address for your company.
 
 {: .note }
 To learn more about the verification process, see [Verify your account information when you enroll in a new Partner Center program](https://learn.microsoft.com/en-us/partner-center/verification-responses).
