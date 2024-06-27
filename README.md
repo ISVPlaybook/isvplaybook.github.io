@@ -8,6 +8,8 @@ The repository is built using Just the Docs theme powered by [Jekyll](https://je
 
 Following is the guidance to help you contribute to the ISV Playbook:
 
+Note: Some of the features mentioned below are specific to the Just the Docs theme and may not render on this page itself. However, they will be generated as expected for the GitHub Pages content. For more information on the features supported by the theme, refer to the [Just the Docs documentation](https://pmarsceill.github.io/just-the-docs/).
+
 ## Page organization and navigation:
 
 - The ISV Playbook is organized into sections and articles. Each section is a folder in the `_docs` directory and each article is a markdown file in the respective section folder.
@@ -18,6 +20,36 @@ Following is the guidance to help you contribute to the ISV Playbook:
 
 ## Front matter:
 
+The front matter for ISV Playbook markdown files is used to define the layout, title, navigation order, parent, and permalink of the pages. An example is as follows:
+
+```markdown
+---
+layout: default
+title: Article Title (shows up in the navigation)
+nav_order: 1 (order of the page in the navigation)
+parent: Parent Section (required for child pages)
+permalink: /docs/parentsection/short-page-name/
+---
+
+# Article Title (this is the title of the page)
+```
+{: .no_toc } - This excludes the article title from the table of contents.
+
+Add a description of the article here in a few lines.
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc} - These lines automatically generate a table of contents based on the headings in the markdown file.
+
+---
+
+The article content follows from here.
+
+```
+
+Some more guidance on the front matter:
 - Each markdown file should have front matter at the beginning of the file. The front matter is used to define the layout, title, navigation order, parent, and permalink of the page.
 - The front matter should be enclosed in `---` at the beginning and end of the front matter.
 - The front matter should have the following fields:
