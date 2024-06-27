@@ -31,10 +31,8 @@ To sign up as a Microsoft Partner, you will need the follwing information at han
 - Authority to sign legal agreements on behalf of your company - You must have the authority to sign legal agreements on behalf of your company to complete the sign-up process.
 - Legal business name and address for your company - You must provide the legal business name and address for your company.
 
-```markdown
 {: .note }
 To learn more about the verification process, see [Verify your account information when you enroll in a new Partner Center program](https://learn.microsoft.com/en-us/partner-center/verification-responses).
-```
 
 ## Get Started
 
