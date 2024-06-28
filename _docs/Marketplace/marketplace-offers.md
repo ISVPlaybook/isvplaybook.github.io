@@ -41,7 +41,7 @@ The following are the offer types that are relevant to ISV partners:
 
 ## Technical requirements
 
-# SaaS offer
+### SaaS offer
 
 SaaS offers in the Azure Marketplace are the most common offer type. The technical requirements for a SaaS offer are as follows:
 
@@ -54,7 +54,7 @@ SaaS offers in the Azure Marketplace are the most common offer type. The technic
 {: .note }
 To learn more about planning, publishing and technica requirements for SaaS offer, see [Plan a SaaS offer for the commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer).
 
-# Azure Application offer
+### Azure Application offer
 
 Azure Application offers are suitable for solutions that require more complicated cloud infrastructure orchestration. The technical requirements for an Azure Application offer are as follows:
 
@@ -67,7 +67,7 @@ Azure Application offers are suitable for solutions that require more complicate
 {: .note }
 To learn more about planning, publishing and technical requirements for Azure Application offer, see [Plan an Azure Application offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-application-offer).
 
-# Azure Container offer
+### Azure Container offer
 
 Azure Container offers are suitable for solutions that can be deployed as a container in the customer's Azure subscription. The technical requirements for an Azure Container offer are as follows:
 
@@ -82,7 +82,7 @@ Azure Container offers are suitable for solutions that can be deployed as a cont
 {. note}
 To learn more about how to publish Azure Container offer, see [Plan an Azure Container offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-containers) and [Prepare Azure container technical assets for a Kubernetes app](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-container-technical-assets-kubernetes?tabs=windows%2Clinux2)
 
-# Azure Virtual Machine offer
+### Azure Virtual Machine offer
 
 Azure Virtual Machine offers are suitable for solutions that can be deployed as a virtual machine in the customer's Azure subscription. The technical requirements for an Azure Virtual Machine offer are as follows:
 
