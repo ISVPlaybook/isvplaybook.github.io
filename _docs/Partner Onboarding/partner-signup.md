@@ -21,7 +21,7 @@ This section contains information about signing up as a Microsoft Partner.
 
 ## Overview
 
-The Microsoft Partner Network (MPN) is now called the Microsoft AI Cloud Partner Program (AICPP). The Microsoft AI Cloud Partner Program (formerly called the Microsoft Partner Network) is a hub of people, resources, and offerings brought together to give you everything you need to build and deliver successful solutions for your customers.
+The Microsoft Partner Network (MPN) is now called the Microsoft AI Cloud Partner Program (AICPP). The Microsoft AI Cloud Partner Program (also formerly called the Microsoft Cloud Partner Program (MCPP)) is a hub of people, resources, and offerings brought together to give you everything you need to build and deliver successful solutions for your customers.
 
 ## Prerequisites
 
