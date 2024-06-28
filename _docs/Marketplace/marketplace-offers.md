@@ -21,11 +21,15 @@ Read on to learn about the Azure Marketplace, Microsoft AppSource and the offer 
 
 ## Overview
 
-Azure Marketplace and Microsoft AppSource are two storefronts meants for different audiences. Azure Marketplace is for IT professionals and developers who are looking for cloud-based solutions. Microsoft AppSource is for business users (such as CxOs) who are looking for cloud-based solutions that can be used with Microsoft 365, Dynamics 365, and Power Platform among others.
+Azure Marketplace and Microsoft AppSource are two storefronts meant for different audiences. Azure Marketplace is for IT professionals and developers who are looking for cloud-based solutions. Microsoft AppSource is for business users (such as CxOs) who are looking for cloud-based solutions that can be used with Microsoft 365, Dynamics 365, and Power Platform among others.
 
 These storefronts offer a variety of solutions, including software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS) solutions. You may have already been exposed to the Azure Marketplace if you have used the Azure Portal to provision resources.
 
-The B2B solutions are the prime candidates for these storefronts. The solutions can be offered as a free trial, bring your own license (BYOL), or pay as you go (PAYG) models. The solutions can be offered as a single offer or as a solution template that includes multiple offers. However, to qualify for the active Go-To-Market (GTM) benefits, the offer must be transactable through the commercial marketplace. The transactable offers in the marketplace show [Get It Now](){: .btn .btn-blue } button on the offer page.
+The B2B solutions are the prime candidates for these storefronts. The solutions can be offered as a free trial, bring your own license (BYOL), or pay as you go (PAYG) models. The solutions can be offered as a single offer or as a solution template that includes multiple offers. However, to qualify for the active Go-To-Market (GTM) benefits, the offer must be transactable through the commercial marketplace. The transactable offers in the marketplace show **Get It Now** button on the offer page as shown below - 
+
+[Get It Now](){: .btn .btn-blue }
+
+The offer types documented below are only offers that are transactable through the marketplace. The offers that are not transactable through the marketplace are not covered in this document.
 
 ## Offer types
 
