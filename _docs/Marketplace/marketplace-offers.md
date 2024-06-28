@@ -55,6 +55,8 @@ SaaS offers in the Azure Marketplace are the most common offer type. The technic
 
 - **API integration** - The offer should have API integration with the Azure Marketplace for transacting the offer. The API integration is used to manage the offer lifecycle, including the customer's purchase, subscription, and billing. Marketplace fulfillment APIs and the Billing APIs are used to manage the offer lifecycle and billing, respectively.
 
+However, to make this easier, you can refer to the [SaaS Accelerator on GitHub](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator). SaaS Accelerator is a reference implementation that provides a set of reusable components and best practices for building a SaaS solution that can be transacted through the Azure Marketplace. It encompasses all the technical requirements to publish a transactable SaaS offer in the Azure Marketplace.
+
 {: .note }
 To learn more about planning, publishing and technica requirements for SaaS offer, see [Plan a SaaS offer for the commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer).
 

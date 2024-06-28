@@ -7,3 +7,6 @@ permalink: /docs/guides/
 ---
 
 # Guides
+
+This section consolidates the guides pertaining various aspects of Microsoft partner lifecycle.
+
