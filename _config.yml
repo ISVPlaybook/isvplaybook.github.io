@@ -4,8 +4,10 @@ theme: just-the-docs
 
 url: https://isvplaybook.github.io
 
-# aux_links:
-#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+logo: "/assets/images/logo.png"
+
+aux_links:
+  Template Repository: https://github.com/isvplaybook/isvplaybook.github.io
 
 nav_enabled: true
 heading_anchors: true
