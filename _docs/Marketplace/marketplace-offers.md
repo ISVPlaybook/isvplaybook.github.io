@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Azure Marketplace Offers
+title: Azure Marketplace Offer Types
 nav_order: 1
-parent: Marketplace
+parent: Azure Marketplace
 permalink: /docs/marketplace/marketplace-offers/
 ---
 
