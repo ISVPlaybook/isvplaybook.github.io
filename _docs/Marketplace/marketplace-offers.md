@@ -83,7 +83,7 @@ Azure Container offers are suitable for solutions that can be deployed as a cont
 
 - The application must be deployable to Linux environment.
 
-{. note}
+{: .note }
 To learn more about how to publish Azure Container offer, see [Plan an Azure Container offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-containers) and [Prepare Azure container technical assets for a Kubernetes app](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-container-technical-assets-kubernetes?tabs=windows%2Clinux2)
 
 ### Azure Virtual Machine offer
