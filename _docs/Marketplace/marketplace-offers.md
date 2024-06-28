@@ -51,7 +51,7 @@ SaaS offers in the Azure Marketplace are the most common offer type. The technic
 
 - **Landing page** - The landing page is the account configration page for customers after they purchase the offer. The landing page is a web page that is hosted by the publisher and is used to configure the customer's account. The landing page is a mandatory requirement for SaaS offers. This page should display the information about the purchase and request activation of the offer.
 
-- **Single sign-on (SSO)** - The landing page is required to have multi-tenant single sign-on (SSO) integration with Microsoft Entra ID (formerly Azure Active Directory) for customer authentication.
+- **Single sign-on (SSO)** - The landing page is required to have multi-tenant single sign-on (SSO) integration with Microsoft Entra ID (formerly Azure Active Directory) for customer authentication. The user authentication used by the SaaS solution can be anything.
 
 - **API integration** - The offer should have API integration with the Azure Marketplace for transacting the offer. The API integration is used to manage the offer lifecycle, including the customer's purchase, subscription, and billing. Marketplace fulfillment APIs and the Billing APIs are used to manage the offer lifecycle and billing, respectively.
 
@@ -66,7 +66,7 @@ Azure Application offers are suitable for solutions that require more complicate
 
 - **UI definition** - The UI definition is used to define the user interface for the offer. It allows the pbulishers to request inputs from the customers during the deployment process such as regions, sizes, and configurations.
 
-- **View definition** - THe optional View definitions can be used by the publishers to define the views that are displayed to the customers after the deployment of the Managed Application. It can be used by the customers to monitor and manage the deployed solution as defined by the publisher.
+- **View definition** - The optional View definitions can be used by the publishers to define the views that are displayed to the customers after the deployment of the Managed Application. It can be used by the customers to monitor and manage the deployed solution as defined by the publisher.
 
 {: .note }
 To learn more about planning, publishing and technical requirements for Azure Application offer, see [Plan an Azure Application offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-application-offer).
