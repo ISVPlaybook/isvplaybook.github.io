@@ -25,7 +25,7 @@ Azure Marketplace and Microsoft AppSource are two storefronts meants for differe
 
 These storefronts offer a variety of solutions, including software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS) solutions. You may have already been exposed to the Azure Marketplace if you have used the Azure Portal to provision resources.
 
-The B2B solutions are the prime candidates for these storefronts. The solutions can be offered as a free trial, bring your own license (BYOL), or pay as you go (PAYG) models. The solutions can be offered as a single offer or as a solution template that includes multiple offers. However, to qualify for the active Go-To-Market (GTM) benefits, the offer must be transactable through the commercial marketplace.
+The B2B solutions are the prime candidates for these storefronts. The solutions can be offered as a free trial, bring your own license (BYOL), or pay as you go (PAYG) models. The solutions can be offered as a single offer or as a solution template that includes multiple offers. However, to qualify for the active Go-To-Market (GTM) benefits, the offer must be transactable through the commercial marketplace. The transactable offers in the marketplace show [Get It Now](){: .btn .btn-blue } button on the offer page.
 
 ## Offer types
 
@@ -39,7 +39,9 @@ The following are the offer types that are relevant to ISV partners:
 
 - **Azure Container offer**: This offer type allows publishers to list solutions that can be deployed as a container in the customer's Azure subscription. The customer pays for the Azure consumption costs. The publisher is responsible for the software updates and the solution maintenance. This type differs from the Azure Application offers in that the solution is deployable as a container or container images which can be deployed in Kubernetes clusters, while the solutions that require more complicated cloud infrastructure orchestration are listed as Azure Application offers.
 
-## SaaS offer
+## Technical requirements
+
+# SaaS offer
 
 SaaS offers in the Azure Marketplace are the most common offer type. The technical requirements for a SaaS offer are as follows:
 
@@ -52,7 +54,7 @@ SaaS offers in the Azure Marketplace are the most common offer type. The technic
 {: .note }
 To learn more about planning, publishing and technica requirements for SaaS offer, see [Plan a SaaS offer for the commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer).
 
-## Azure Application offer
+# Azure Application offer
 
 Azure Application offers are suitable for solutions that require more complicated cloud infrastructure orchestration. The technical requirements for an Azure Application offer are as follows:
 
@@ -65,13 +67,22 @@ Azure Application offers are suitable for solutions that require more complicate
 {: .note }
 To learn more about planning, publishing and technical requirements for Azure Application offer, see [Plan an Azure Application offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-application-offer).
 
-## Azure Container offer
+# Azure Container offer
 
 Azure Container offers are suitable for solutions that can be deployed as a container in the customer's Azure subscription. The technical requirements for an Azure Container offer are as follows:
 
+- Your application must be Helm chart-based. If you have multiple charts, you can include other helm charts as subcharts aside from the main helm chart.
 
+- All the image references and digest details must be included in the chart. No other charts or images can be downloaded at runtime.
 
-## Azure Virtual Machine offer
+- You must have created an Azure Container Registry (ACR) that belongs to the active publishing tenant above. The Cloud Native Application Bundle (CNAB) with uploaded to this ACR.
+
+- The application must be deployable to Linux environment.
+
+{. note}
+To learn more about how to publish Azure Container offer, see [Plan an Azure Container offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-containers) and [Prepare Azure container technical assets for a Kubernetes app](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-container-technical-assets-kubernetes?tabs=windows%2Clinux2)
+
+# Azure Virtual Machine offer
 
 Azure Virtual Machine offers are suitable for solutions that can be deployed as a virtual machine in the customer's Azure subscription. The technical requirements for an Azure Virtual Machine offer are as follows:
 
