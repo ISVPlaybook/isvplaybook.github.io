@@ -65,6 +65,12 @@ Azure Application offers are suitable for solutions that require more complicate
 {: .note }
 To learn more about planning, publishing and technical requirements for Azure Application offer, see [Plan an Azure Application offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-application-offer).
 
+## Azure Container offer
+
+Azure Container offers are suitable for solutions that can be deployed as a container in the customer's Azure subscription. The technical requirements for an Azure Container offer are as follows:
+
+
+
 ## Azure Virtual Machine offer
 
 Azure Virtual Machine offers are suitable for solutions that can be deployed as a virtual machine in the customer's Azure subscription. The technical requirements for an Azure Virtual Machine offer are as follows:
