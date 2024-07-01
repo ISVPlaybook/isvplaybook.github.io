@@ -96,3 +96,9 @@ These logos are used in different places in the online stores:
 
 ## Publishing the offer
 
+
+## Offer validation
+
+
+## Go-live
+

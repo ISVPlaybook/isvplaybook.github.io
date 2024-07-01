@@ -99,3 +99,5 @@ Azure Virtual Machine offers are suitable for solutions that can be deployed as 
 {: .note }
 To learn more about the process of creating technical assets for Azure Virtual Machine Image offer, see [Create a virtual machine using an approved base](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-vm-use-approved-base) or [Create a virtual machine using your own image
 ](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-vm-use-own-image) 
+
+
