@@ -18,3 +18,6 @@ This article explains the concept of metered billing in Azure Marketplace and ho
 {:toc}
 
 ---
+
+## Overview
+
