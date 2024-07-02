@@ -116,7 +116,7 @@ After the offer has been tested and validated, you can click the _Go Live_ butto
 {: .note }
 Offers that include custom billing dimensions will only listed on the Azure Marketplace and not on AppSource.
 
-A live offer will look like as following in the Partner Center > Commercial Marketplace > Overview > Offer name page:
+A live offer will look like as following in the _Partner Center > Marketplace Offers > Your Offer_ page:
 
 Published SaaS Offer: 
 ![Published SaaS Offer](/assets/images/PublishedSaaSOffer.png)

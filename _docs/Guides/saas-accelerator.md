@@ -47,11 +47,11 @@ The SaaS Accelerator installation script creates a number of resources in your A
 After the installation, the deployment script outputs the following information:
 
 - _Landing Page URL_
-- _Webhook URL_
-- _Tenant ID_
-- _Application ID_
+- _Connection Webhook URL_
+- _Microsoft Entra Tenant ID_
+- _Microsoft Entra Application ID_
 
-You will need to copy this information and paste them in the _Parter Center > Commercial Marketplace > Offers > Your Offer > Technical Configuration_ section as shown below:
+You will need to copy this information and paste them in the _Parter Center > Marketplace Offers > Your Offer > Technical Configuration_ section as shown below:
 
 ![Technical Configuration](/assets/images/saas-accel-tech-config.png)
 SaaS Offer Technical Configuration
@@ -59,4 +59,8 @@ SaaS Offer Technical Configuration
 The offer is now ready to be published in the Azure Marketplace. You review the offer and proceed with the publishing process.
 
 {: .note }
-The 
+The SaaS Accelerator also provides a publisher admin portal that can be used to manage the customer subscriptions. Please see the SaaS Accelerator video tutorial linked in the _Additional Resources_ sections to learn more.
+
+## Additional Resources
+- [Add technical details for a SaaS offer](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer-technical)
+- [Mastering the Marketplace - Mastering the SaaS Accelerator](https://microsoft.github.io/Mastering-the-Marketplace/saas-accelerator/)
