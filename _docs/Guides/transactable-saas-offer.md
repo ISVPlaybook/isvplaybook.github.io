@@ -106,4 +106,4 @@ After the offer has been tested and validated, you can click the _Go Live_ butto
 {: .note }
 Offers that include custom billing dimensions will only listed on the Azure Marketplace and not on AppSource.
 
-![Image description](/assets/PublishedSaaSOffer.jpg)
+![Image description](assets/PublishedSaaSOffer.jpg)
