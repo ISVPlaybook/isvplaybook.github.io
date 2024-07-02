@@ -65,7 +65,7 @@ A custom billing dimension is defined with the following properties:
 
 - _Included quantities in base_: quantity of dimension included in the base price if you have defined a _flat rate_ price **and** if you include any unit quantity in the base price. This should be defined for each billing term defined in the plan. If you have not defined a _flat rate_ price, this field should be 0.
 
-### Example
+#### Example
 
 Consider a SaaS solution that offers a _flat rate_ pricing of $100 per month and charges $0.01 per API call. The solution also offers a _per user_ pricing of $10 per user per month. The solution can define the following custom billing dimensions:
 
@@ -83,7 +83,7 @@ In the example above, a customer will be billed $100 per month as the _flat rate
 
 A sample API call to send usage events for the _API Calls_ dimension is as follows:
 
-```json
+```
 {
   "resourceId": <guid>, // unique identifier of the resource against which usage is emitted. 
   "quantity": 7250, // how many units were consumed for the date and hour specified in effectiveStartTime, must be greater than 0 or a double integer, can include decimal points
@@ -96,7 +96,7 @@ A sample API call to send usage events for the _API Calls_ dimension is as follo
 {: .note }
 You can either use the [Single Usage event API](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-metering-service-apis#metered-billing-single-usage-event) or the [Batch Usage event API](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-metering-service-apis#metered-billing-batch-usage-event) to send the usage events to the Azure Marketplace. The Single Usage event API is used to send usage events for a single dimension and a single resource, while the Batch Usage event API is used to send usage events for multiple dimensions and multiple resources as well as multiple customer in a single API call.
 
-A similar call can be placed for the _per user_ dimension as well. 
+A similar call can be placed for the _per user_ dimension since we added that as a custom dimension rather than using the _per user_ pricing model.
 
 {: .note }
 If you plan to charge your customers upfront for any of the custom dimension, you can send the usage event such custom dimension immediately after the subscription activation.
