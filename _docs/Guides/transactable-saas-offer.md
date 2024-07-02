@@ -110,3 +110,9 @@ A live offer will look like as following in the Partner Center > Commercial Mark
 
 Published SaaS Offer: 
 ![Published SaaS Offer](/assets/images/PublishedSaaSOffer.png)
+
+## Additional Resources
+
+- [Plan a SaaS offer for the commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer)
+- [Working with SaaS Offers in Partner Center](https://microsoft.github.io/Mastering-the-Marketplace/partner-center/saas/)
+- [Video guide on using billing dimensions](https://youtu.be/2akaTVj87j4?t=289)
