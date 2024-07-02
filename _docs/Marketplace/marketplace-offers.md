@@ -53,7 +53,7 @@ SaaS offers in the Azure Marketplace are the most common offer type. The technic
 
 - **Single sign-on (SSO)** - The landing page is required to have multi-tenant single sign-on (SSO) integration with Microsoft Entra ID (formerly Azure Active Directory) for customer authentication. The user authentication used by the SaaS solution can be anything.
 
-- **API integration** - The offer should have API integration with the Azure Marketplace for transacting the offer. The API integration is used to manage the offer lifecycle, including the customer's purchase, subscription, and billing. Marketplace fulfillment APIs and the Billing APIs are used to manage the offer lifecycle and billing, respectively.
+- **API integration** - The offer should have the Marketplace fulfillment APIs and the Billing APIs to manage the offer lifecycle and billing, respectively.
 
 However, to make this easier, you can refer to the [SaaS Accelerator on GitHub](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator). SaaS Accelerator is a reference implementation that provides a set of reusable components and best practices for building a SaaS solution that can be transacted through the Azure Marketplace. It encompasses all the technical requirements to publish a transactable SaaS offer in the Azure Marketplace.
 

@@ -38,7 +38,7 @@ Another important aspect that you need to understand is the transactional capabi
 {: .note }
 The SaaS Accelerator provides a reference integration with _Metered Billing APIs_ to facilitate the metered billing capabilities. You can refer to the [SaaS Accelerator on GitHub](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) for more information.
 
-## Gathering information
+## Gathering Information
 
 Before you start creating the offer in Partner Center, you need to gather the following information:
 
@@ -86,13 +86,23 @@ Before you start creating the offer in Partner Center, you need to gather the fo
   - _Markets_: Selection of markets where you want to make the plan available.
   - _Pricing details_: A choice between _Flat rate_ and _Per user_ pricing models. Additionally, you can add custom dimensions for metered billing.
 
-## Publishing the offer
+## Technical Requirements
+
+Listing a transactable SaaS offer in the Azure Marketplace requires the following technical integrations:
+
+- **Landing page** - The landing page is the account configration page for customers after they purchase the offer. The landing page is a web page that is hosted by the publisher and is used to configure the customer's account. The landing page is a mandatory requirement for SaaS offers. This page should display the information about the purchase and request activation of the offer.
+
+- **Single sign-on (SSO)** - The landing page is required to have multi-tenant single sign-on (SSO) integration with Microsoft Entra ID (formerly Azure Active Directory) for customer authentication. The user authentication used by the SaaS solution can be anything.
+
+- **API integration** - The offer should have the Marketplace fulfillment APIs and the Billing APIs to manage the offer lifecycle and billing, respectively.
+
+## Publishing the Offer
 
 Once you gathered the details, you can proceed with creating the offer in Partner Center. At any point of time, you can click on **Review and publish** button to understand what details are missing or need to be updated.
 
 If all the page on review screen are green, you can click on **Publish** button to submit the offer for validation.
 
-## Offer validation
+## Offer Validation
 
 After submitting the offer, it will go through the automated validation process and will be available in _Preview_ stage. During this stage, only the users added in the _Preview Audience_ list, will be able to see this offer in the Azure Marketplace and/or AppSource and will be able to test the end-to-end flow.
 
