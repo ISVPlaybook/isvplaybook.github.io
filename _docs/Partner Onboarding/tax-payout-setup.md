@@ -9,7 +9,7 @@ permalink: /docs/partneronboarding/tax-payout-setup/
 # Tax and Payout Profile Setup
 {: .no_toc }
 
-This section contains information about setting up the Tax and Payout Profile in the Microsoft Partner.
+This section contains information about setting up the Tax and Payout Profile in the Partner Center.
 
 ## Table of contents
 {: .no_toc .text-delta }
