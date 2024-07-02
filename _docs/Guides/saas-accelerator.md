@@ -53,8 +53,8 @@ After the installation, the deployment script outputs the following information:
 
 You will need to copy this information and paste them in the _Parter Center > Marketplace Offers > Your Offer > Technical Configuration_ section as shown below:
 
-![Technical Configuration](/assets/images/saas-accel-tech-config.png)
-SaaS Offer Technical Configuration
+SaaS Offer Technical Configuration:
+![SaaS Offer Technical Configuration](/assets/images/saas-accel-tech-config.png)
 
 The offer is now ready to be published in the Azure Marketplace. You review the offer and proceed with the publishing process.
 
