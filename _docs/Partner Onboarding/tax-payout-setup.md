@@ -21,7 +21,7 @@ This section contains information about signing up as a Microsoft Partner.
 
 ## Overview
 
-Tax and Payout profile needs to setup before you make an transaction via the Azure Marketplace.Please follow the setps as mention in the below document for setting up the Tax and Payout Profile.
+Tax and Payout profile needs to setup before you make an transaction via the Azure Marketplace.Please follow the steps as mentioned in the below document for setting up the Tax and Payout Profile.
 
 [Tax and Payout Profile Setup](/assets/docs/Tax%20&%20Payout%20Profile%20Setup.docx)
 
