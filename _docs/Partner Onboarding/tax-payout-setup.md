@@ -6,7 +6,7 @@ parent: Partner Onboarding
 permalink: /docs/partneronboarding/tax-payout-setup/
 ---
 
-# Sign up as a Microsoft Partner
+# Tax and Payout Profile Setup
 {: .no_toc }
 
 This section contains information about signing up as a Microsoft Partner.
@@ -26,7 +26,7 @@ Tax and Payout profile needs to setup before you make an transaction via the Azu
 [Tax and Payout Profile Setup](/assets/docs/Tax%20&%20Payout%20Profile%20Setup.docx)
 
 {: .note }
-To learn more about the verification process, see [Verify your account information when you enroll in a new Partner Center program](https://learn.microsoft.com/en-us/partner-center/verification-responses).
+To learn more about the tax and profile setup process, see [Tax and Payout Profile](https://learn.microsoft.com/en-us/partner-center/incentives-create-and-manage-your-payout-and-tax-profiles).
 
 ## Additional resources
 
